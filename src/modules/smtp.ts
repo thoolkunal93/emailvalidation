@@ -2,7 +2,7 @@ import net from 'net'
 import { hasCode, ErrorCodes } from './ErrorCodes.js'
 
 const log = (...args: unknown[]) => {
-    console.log(...args)
+    // console.log(...args)
 }
 
 export const checkSMTP = async (sender: string, recipient: string, exchange: string): Promise<any> => {

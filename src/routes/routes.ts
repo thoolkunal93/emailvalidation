@@ -1,17 +1,18 @@
+/**
+ * Routes For Home both get and put
+ *
+ */
 import  express from 'express';
 import { Router } from 'express';
 import Main from '../controllers/mainController.js';
 
 const router = Router();
 
-// const mainController = require('./../controllers/mainController');
-
-// Home page route.
+//For Index
 router.get("/", Main.index);
+
+//For email post to validate email
 router.post("/", Main.postEmail);
 
-//Post Route
-// router.post("/", mainController.result);
 
-
-export default router
+export default router;
